@@ -1,0 +1,21 @@
+{% load static %}
+<html>
+    <head>
+        <div>
+            
+        <title>Sara Reviews</title>
+        </div>
+        <link href="https://fonts.googleeapis.com/css?family=Source+Sans+Pro:400"
+        rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    </head>
+    <body>
+        <header>
+            <h1><a href="{% url 'home' %}">Sara Reviews</a></h1>
+        </header>
+        <div>
+            {% block content %}
+            {% endblock content %}
+        </div>
+    </body>
+</html>
